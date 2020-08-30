@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/uikit.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/modernizr.custom.js"></script>
 	<!--[if IE]>
@@ -69,16 +70,17 @@
 		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
 			<div class="container">
 				<div class="navbar-header" style="position: absolute;">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
-							class="fa fa-bars"></i></button>
+					<button type="button" class="navbar-toggle m-nav" data-toggle="collapse" data-target=".navbar-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
 					<a class="navbar-brand animate" href="#"><img src="img/logo.png" alt="logo1"></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<!-- navbar-right -->
-					<ul class="nav navbar-nav navbar-center animate">
-						<li class="nav-li"><a id="menu-1" onclick="recarregar('#')"></a></li>
-						<li class="nav-li"><a id="menu-2" onclick="recarregar('#about')"></a></li>
-                        <li class="nav-li"><a id="menu-3" onclick="recarregar('#services ')"></a></li>
+					<ul class="nav navbar-nav navbar-center animate m-itens-menu">
+						<li class="nav-li"><a id="menu-1" onclick="recarregar('#')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+						<li class="nav-li"><a id="menu-2" onclick="recarregar('#about')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+                        <li class="nav-li"><a id="menu-3" onclick="recarregar('#services ')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
                         <li class="nav-li"><a id="menu-4" href="#"></a>
 							<div uk-dropdown="offset: 0">
 								<ul class="uk-nav uk-dropdown-nav">
@@ -87,12 +89,12 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-li"><a id="menu-5" onclick="recarregar('depoimentos.html')"></a></li>
-                        <li class="nav-li"><a id="menu-6" onclick="recarregar('contato.html')"></a></li>
+						<li class="nav-li"><a id="menu-5" onclick="recarregar('depoimentos.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+                        <li class="nav-li"><a id="menu-6" onclick="recarregar('contato.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
                         <li class="nav-li"><a id="menu-7" href="" target="_blanck"></a></li>
 						<li class="nav-li">
-							<span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
-								<a onclick="lang_EN()">EN</a></span>
+							<span id="idioma"><a onclick="lang_BR()" data-toggle="collapse" data-target=".navbar-collapse">BR</a>&nbsp;|&nbsp;
+								<a onclick="lang_EN()" data-toggle="collapse" data-target=".navbar-collapse">EN</a></span>
 						</li>
 					</ul>
 				</div>
@@ -266,7 +268,7 @@
 							<div class="uk-card-body">
                                 <h3 class="uk-card-title">Raquel Toni</h3>
                                 <p id="equipe_p2_cv"></p>
-                                <div>
+                                <div class="m-equipe-social">
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin; ratio: 1.2"></a>
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram; ratio: 1.2"></a>
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail; ratio: 1.2"></a>
@@ -385,14 +387,9 @@
 		<script type="text/javascript" src="js/uikit.min.js"></script>
 		<script type="text/javascript" src="js/uikit-icons.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script src="js/grid.js"></script>
+		<script type="text/javascript" src="js/grid.js"></script>
 		<script type="text/javascript" src="js/port.js"></script>
-		<script>
-			//Funcao chama informacao do profissional
-			$(function () {
-				Grid.init();
-			});
-		</script>
+		<script type="text/javascript" src="js/mobile.js"></script>
 </body>
 
 </html>

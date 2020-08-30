@@ -1,0 +1,60 @@
+@media only screen and (max-width: 600px) {
+    
+    /*Ajustes menu navegacao*/
+    .m-nav{
+        color:#fff;
+        position: fixed;
+        right: 0px;
+    }
+    .nav-li > a {
+        line-height: 1.8!important; 
+        width: 200px;
+    }
+    .m-itens-menu{
+        margin-top: 12%;
+        margin-left: 0%!important;
+        display: block!important;
+        text-align: inherit;
+    }
+    #idioma{
+        width: 100px;
+        margin-top: 40%; 
+    }
+
+    .navbar-nav > li > div.uk-dropdown {    
+        position: unset;
+        margin-left: 40%;
+        min-width: 200px;
+        padding: 0px;
+        background: #fff0;
+    }
+    .uk-dropdown-nav>li>a {
+        color: #fff;
+    }
+
+    /*Ajustes equipes*/
+    .m-equipe-social{
+        text-align: center;
+    }
+    .img-team {
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+        height: 250px;
+        width: 62.5%;
+    }
+    .uk-card-title {
+        text-align: center;
+    }
+
+
+    /*Ajustes contatos*/
+    img.pulse {
+        width: 40px;
+        bottom: 10px;
+        right: 10px; 
+    }
+    img#contatoW {
+        bottom: 60px;
+    }
+  }
