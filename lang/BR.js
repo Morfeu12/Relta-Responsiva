@@ -1,11 +1,11 @@
 //Variaveis, cada texto tem uma variavel
 var home = "Início",
-	depoimentos = "Depoimentos",
-	blog = "Blog", 
+	depoimentos = "Depoimentos", 
 	services = "Serviços",
 	portfolio = "Portfólio",
-	about = "Nossa História",
+	about = "Sobre",
 	contact = "Contato",
+	agenda = "Agende sua reunião",
 	banner_1 = "Viva o novo",
 	banner_msg_1 = "Relta Arquitetura",
 	banner_2 = "Viva o novo",
@@ -24,23 +24,22 @@ var home = "Início",
 	port_desc = "Conheça todos os nossos projetos.",
 	parceiro_titulo = "Parceiros",
 	parceiro_desc = "",
-	sobre_titulo = "QUEM SOMOS",
 	sobre_subtitulo = "Nossa História",
-	sobre_msg = "Fundada por Felipe Alves e Raquel Freitas, a Relta Arquitutra desenvolve projetos em diálogo com a natureza e em contato com as devidas intenções, visando todas as necessidades de seus clientes. Felipe e Raquel trabalham juntos desde 2014, mas somente em 2016 ambos decidem fundar a sociedade empresarial.",
+	sobre_msg = "Fundada pela Raquel Toni, a Relta Arquitetura desenvolve projetos de arquitetura e interiores no intuito de proporcionar a qualquer ambiente a transformação ideal para cada família. Visamos o contato com a natureza, através da biofilia e feng shui para cada espaço.",
 	missao_titulo = "MISSÃO",
-	missao_desc = "Proporcionar soluções ambientais sustentáveis a seus clientes, parceiros e a sociedade, buscando desenvolvimento ambiental equilibrado e consciente.",
+	missao_desc = "Proporcionar soluções ambientais sustentáveis buscando equilíbrio e consciência.",
 	visao_titulo = "VISÃO",
-	visao_desc = "Ser uma empresa em referência nas soluções de consultoria, projetos e construções buscando atuar no mercado de forma transparente e ética.",
+	visao_desc = "Ser uma empresa em referência na arquitetura buscando atuar no mercado de forma transparente e ética.",
 	valores_titulo = "VALORES",
-	valores_desc = "Comprometimento, Foco, Objetividade, Praticidade, Sustentabilidade, Ética, Pontualidade, Transparência, Qualidade e Inovação.",
-	equipe_titulo = "A EQUIPE",
-	equipe_desc = "O escritório aposta em uma relação próxima com a natureza, em favor do conceito de verdadeira sustentabilidade. Projetos realizados que trabalham com materiais ecológicos, fazendo amplo uso de elementos como a luminosidade, a transparência, a fluidez dos espaços e a leveza estrutural. Por meio dessa proposta, estabelecendo um conceito de arquitetura brasileira, com a reapropriação do modernismo em diálogo com o meio ambiente.",
-	equipe_p1_nome = "Felipe Alves",
-	equipe_p1_cargo = "Arquiteto Fundador",
-	equipe_p1_cv = "Ingressou no mercado em 2010, como estagiário em arquitetura, executando ao mesmo tempo projetos em freelance. Em 2011 passou a trabalhar com o arquiteto Roberto Montenegro onde adquiriu experiência com decorações e reformas, posteriormente em 2012 passou a estagiar na empresa Atthelie da Arquitetura, onde adquiriu experiência em Projetos de Aprovações, Cetesb, Covisa, Corpo de Bombeiros, Vigilância Sanitária, Acompanhamento e Gerenciamento de Obras. Em 2014, abriu a empresa como empresário individual, passando a atuar no mercado por conta própria.",
+	valores_desc = "Comprometimento, Praticidade e Sustentabilidade",
+	equipe_titulo = "QUEM SOMOS",
+	equipe_desc = "O escritório aposta em uma relação próxima com a natureza, em favor do conceito de verdadeira sustentabilidade. Todos os projetos realizados trabalham com materiais ecológicos, melhorando a luminosidade, a transparência e a fluidez dos espaços. Por meio dessa proposta, estabelecemos um  conceito de arquitetura brasileira, com a reapropriação do modernismo ligado ao meio ambiente.",
+	equipe_p1_nome = "",
+	equipe_p1_cargo = "",
+	equipe_p1_cv = "",
 	equipe_p2_nome = "Raquel Toni",
-	equipe_p2_cargo = "Co-Fundadora e Arquiteta",
-	equipe_p2_cv = "Arquiteta atuante desde 2016, atuou como estagiária no Hospital Israelita Albert Einstein no ano de 2012 realizando projetos de interiores hospitalares, posteriormente no ano de 2013 ingressou como estagiária na empresa Atthelie da Arquitetura, executando análise de processos e projetos junto a Prefeituras. Prestou serviços em 2015 à empresa PW Design - Arquitetura e Interiores, realizando o desenvolvimento de projetos residenciais e comerciais, bem como as definições de mateirais e apresentação de projetos in loco. Além de ter iniciado sua profissão, com dois anos de participação na Prefeitura de São Paulo, para o cadastro fiscal e zoneamento da cidade."
+	equipe_p2_cargo = "Fundadora e Arquiteta",
+	equipe_p2_cv = "Arquiteta desde 2016, atuou como estagiária no Hospital Israelita Albert Einstein no ano de 2012 realizando projetos de interiores hospitalares, posteriormente no ano de 2013 ingressou como estagiária na empresa Atthelie da Arquitetura, executando análise de processos e projetos junto a Prefeituras. Prestou serviços em 2015 à empresa PW Design - Arquitetura e Interiores, realizando o desenvolvimento de projetos residenciais e comerciais, bem como as definições de materiais e apresentação de projetos in loco. Além de ter iniciado sua profissão, com dois anos de participação na Prefeitura de São Paulo, para o cadastro fiscal e zoneamento da cidade."
 		
 //Funcao verifica e altera o valor do elemnto HTML
 function validaID (id, valor){
@@ -80,7 +79,7 @@ this.validaID('#menu-3', services);
 this.validaID('#menu-4', portfolio);
 this.validaID('#menu-5', depoimentos);
 this.validaID('#menu-6', contact);
-this.validaID('#menu-7', blog);
+this.validaID('#menu-7', agenda);
 this.validaID('#banner-1', banner_1);
 this.validaID('#banner-2', banner_2);
 this.validaID('#banner-3', banner_3);
@@ -97,7 +96,6 @@ this.validaID('#servico_3_titulo', servico_3_titulo);
 this.validaID('#servico_3_desc', servico_3_desc);
 this.validaID('#parceiro_titulo', parceiro_titulo);
 this.validaID('#parceiro_desc', parceiro_desc);
-this.validaID('#sobre_titulo', sobre_titulo);
 this.validaID('#sobre_subtitulo', sobre_subtitulo);
 this.validaID('#sobre_msg', sobre_msg);
 this.validaID('#missao_titulo', missao_titulo);

@@ -34,7 +34,10 @@ a:focus {
 	/*margin-bottom: 50px;*/
 }
 .nav-li{
-	width: 16.66666666666667%;
+	/*width: 16.66666666666667%;*/
+	margin-left: 3%;
+    margin-right: 3%;
+    text-transform: uppercase;
 }
 
 .nav > li > a{
@@ -42,7 +45,7 @@ a:focus {
 }
 
 .navbar-smak {
-	background: rgba(19, 19, 22, 0.5);
+	background: rgba(19, 19, 22);
 	transition: all 0.5s;
 }
 
@@ -52,6 +55,7 @@ a:focus {
 
 .navbar-small {
 	background: rgba(19, 19, 22);
+	height: 7%;
 }
 
 .navbar-small .nav {
@@ -188,6 +192,21 @@ a:focus {
 	background-color: transparent;
 	color: #DAB656;
 }
+.agende-reuniao-botao > a {
+	position: absolute;
+    right: 15%;
+    top: 15%;
+	z-index: 100;
+	border-radius: 40px;
+}
+.agende-reuniao-botao > a:hover {
+	background: #b89430!important;
+	color: #eee!important;
+}
+.agende-reuniao-botao > a:focus {
+	background: #b89430!important;
+	color: #eee!important;
+}
 .gray {
 	background: #FBFBFB;
 }
@@ -286,12 +305,7 @@ a:focus {
 }
 .process-item .fa {
 	color: #DAB656;
-}
-
-.team{
-	list-style: none;
-}
-
+}idioma
 .team-extended .row{
 	margin-bottom: 0;
 }
@@ -1347,7 +1361,10 @@ body > div.loader > div > div > p{
 	margin-bottom: 50px;
 }
 #idioma{
-    display: block;
+	display: block;
+	position: absolute;
+    top: 25%;
+    right: 6%;
     /*margin-top: 10px;
     margin-left: 49px;*/
 }
@@ -1674,11 +1691,17 @@ body {
     background-size: cover;
 }
 .navbar-center{
-	display: flex!important;
+	/*display: flex!important;
     margin-right: 15%!important;
     margin-left: 15%!important;
     float: none;
+	text-align: center;*/
+	
+	display: flex!important;
+    margin-left: 30%!important;
+    float: none;
     text-align: center;
+}
   }
   #parceiros img{
 	  width: 60%;
@@ -1690,16 +1713,30 @@ body {
 	  text-align: justify;
 	  font-size: 11pt;
   }
+  .card-team{
+	border-radius: 15px;
+  }
   .img-team{
-	border-radius: 5%;
+	border-radius: 50%;
+	position: absolute;
+    width: 250px;
+    height: 250px;
+    transform: translate(50px, 50px);
   }
   .img-services{
-	  height: 265px;
+	height: 170px;
+    display: block;
+    margin: auto;
+    padding-top: 1rem;
   }
   .card-services{
 	  height: 390px;
 	  padding: 30px 30px;
+	  text-align: center;
   }
   .card-services > h3 {
 	  font-size: 1.2rem;
+  }
+  .portfolio{
+	  margin-bottom: 5%;
   }

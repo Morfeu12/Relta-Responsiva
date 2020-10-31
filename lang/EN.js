@@ -1,11 +1,11 @@
 //Variaveis, cada texto tem uma variavel
 var home = "Home",
 	depoimentos = "Depoimentos",
-	blog = "Blog", 
 	services = "Services",
 	portfolio = "Portfolio",
-	about = "Our Story",
+	about = "About",
 	contact = "Contact", 
+	agenda = "Schedule your meeting",
 	banner_1 = "Live the new",
 	banner_msg_1 = "Relta Arquitetura",
 	banner_2 = "Live the new",
@@ -23,24 +23,23 @@ var home = "Home",
 	port_titulo = "PORTIFOLIO",
 	port_desc = "know all our projects",
 	parceiro_titulo = "Partners",
-	parceiro_desc = "",
-	sobre_titulo = "WHO WE ARE",
+	parceiro_desc = "Provide sustainable environmental solutions seeking balance and awareness.",
 	sobre_subtitulo = "Our Story",
-	sobre_msg = "Founded by Felipe Alves and Raquel Freitas, Relta Arquitutra develops projects in dialogue with nature and in contact with the right intentions, targeting all the needs of its clients. Felipe and Raquel have been working together since 2014, but only in 2016 do they decide to found the corporate society.",
+	sobre_msg = "Founded by Raquel Toni, a Relta Arquitetura, architectural and interior projects in order to provide any environment with an ideal transformation for each family. We aim at contact with nature, through biophilia and feng shui for each space.",
 	missao_titulo = "MISSION",
-	missao_desc = "Provide sustainable environmental solutions to its customers, partners and society, seeking balanced and conscious environmental development.",
+	missao_desc = "Provide sustainable environmental solutions seeking balance and awareness.",
 	visao_titulo = "VISION",
-	visao_desc = "Be a reference company in consulting solutions, projects and constructions seeking to operate in the market in a transparent and ethical manner.",
+	visao_desc = "To be a company in reference in architecture, seeking to operate in the market in a transparent and ethical manner.",
 	valores_titulo = "VALUES",
-	valores_desc = "Commitment, Focus, Objectivity, Practicality, Sustainability, Ethics, Punctuality, Transparency, Quality and Innovation.",
-	equipe_titulo = "THE TEAM",
-	equipe_desc = "The office bets on a close relationship with nature, in favor of the concept of true sustainability. Realized projects that work with ecological materials, making wide use of elements such as brightness, transparency, the fluidity of spaces and structural lightness. Through this proposal, establishing a concept of Brazilian architecture, with the reappropriation of modernism in dialogue with the environment.",
-	equipe_p1_nome = "Felipe Alves",
-	equipe_p1_cargo = "Architect and Founder",
-	equipe_p1_cv = "He joined the market in 2010 as an architecture intern while doing freelance projects. In 2011 he worked with architect Roberto Montenegro where he gained experience with decorations and renovations, later in 2012 he joined the company Atthelie da Arquitetura, where he gained experience in Approvals, Cetesb, Covisa, Fire Department, Sanitary Surveillance, Monitoring. and Construction Management. In 2014, he opened the company as an individual entrepreneur, moving to the market on his own.",
+	valores_desc = "Commitment, Practicality and Sustainability",
+	equipe_titulo = "WHO WE ARE",
+	equipe_desc = "The firm is committed to a close relationship with nature, in favor of the concept of true sustainability. All projects carried out work with ecological materials, improving the brightness, transparency and fluidity of the spaces. Through this proposal, we established a concept of Brazilian architecture, with the reappropriation of modernism linked to the environment.",
+	equipe_p1_nome = "",
+	equipe_p1_cargo = "",
+	equipe_p1_cv = "",
 	equipe_p2_nome = "Raquel Toni",
-	equipe_p2_cargo = "Co-Founder and architect",
-	equipe_p2_cv = "Architect since 2016, worked as a trainee at Hospital Israelita Albert Einstein in 2012 doing interior design projects, later in 2013 joined as a trainee at Atthelie da Arquitetura, performing process and project analysis with City Halls. Provided services in 2015 to the company PW Design - Arquitetura e Interiores, performing the development of residential and commercial projects, as well as the definitions of materials and presentation of projects on site. In addition to having started his profession, with two years of participation in the City of São Paulo, for tax registration and zoning of the city."
+	equipe_p2_cargo = "Founder and architect",
+	equipe_p2_cv = "Architect since 2016, she worked as an intern at Hospital Israelita Albert Einstein in 2012 carrying out hospital interior projects, later in 2013 she joined as an intern at Atthelie da Arquitetura, performing process analysis and projects with City Halls. In 2015, he provided services to the company PW Design - Arquitetura e Interiores, carrying out the development of residential and commercial projects, as well as the definitions of materials and presentation of projects in loco. In addition to having started his profession, with two years of participation in the City of São Paulo, for the tax registration and zoning of the city."
 	
 //Funcao verifica e altera o valor do elemnto HTML
 function validaID (id, valor){
@@ -80,7 +79,7 @@ this.validaID('#menu-3', services);
 this.validaID('#menu-4', portfolio);
 this.validaID('#menu-5', depoimentos);
 this.validaID('#menu-6', contact);
-this.validaID('#menu-7', blog);
+this.validaID('#menu-7', agenda);
 this.validaID('#banner-1', banner_1);
 this.validaID('#banner-2', banner_2);
 this.validaID('#banner-3', banner_3);
@@ -99,7 +98,6 @@ this.validaID('#port_titulo', port_titulo);
 this.validaID('#port_desc', port_desc);
 this.validaID('#parceiro_titulo', parceiro_titulo);
 this.validaID('#parceiro_desc', parceiro_desc);
-this.validaID('#sobre_titulo', sobre_titulo);
 this.validaID('#sobre_subtitulo', sobre_subtitulo);
 this.validaID('#sobre_msg', sobre_msg);
 this.validaID('#missao_titulo', missao_titulo);

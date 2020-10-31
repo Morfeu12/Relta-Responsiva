@@ -1,13 +1,32 @@
 @media only screen and (max-width: 600px) {
-    
+    /*Tela de carregamento*/
+    .project-loader{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: initial;    
+    }
+    .loader .bubblingG {
+        left: inherit;
+        margin-left: 0px;
+        margin-top: 0px;
+        top: 38%;
+
+    }
+
     /*Ajustes menu navegacao*/
+    #idioma{
+        width: 100px;
+        margin-top: 40%; 
+    }
     .m-nav{
         color:#fff;
         position: fixed;
         right: 0px;
     }
     .nav-li > a {
-        line-height: 1.8!important; 
+        line-height: 2.6!important; 
         width: 200px;
     }
     .m-itens-menu{
@@ -16,23 +35,30 @@
         display: block!important;
         text-align: inherit;
     }
-    #idioma{
-        width: 100px;
-        margin-top: 40%; 
-    }
-
     .navbar-nav > li > div.uk-dropdown {    
         position: unset;
         margin-left: 40%;
         min-width: 200px;
         padding: 0px;
         background: #fff0;
+        box-shadow: none;
     }
     .uk-dropdown-nav>li>a {
         color: #fff;
     }
+    .navbar-collapse{
+        max-height: inherit;
+    }
+
+    /* Ajuste service */
+    .img-services {
+        height: inherit;
+    }
 
     /*Ajustes equipes*/
+    #equipe_p2_cv{
+        text-align: center;
+    }
     .m-equipe-social{
         text-align: center;
     }
@@ -51,10 +77,10 @@
     /*Ajustes contatos*/
     img.pulse {
         width: 40px;
-        bottom: 10px;
+        bottom: 35px;
         right: 10px; 
     }
     img#contatoW {
-        bottom: 60px;
+        bottom: 90px;
     }
   }

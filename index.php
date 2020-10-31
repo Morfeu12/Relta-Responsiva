@@ -18,6 +18,7 @@
 	<link rel="stylesheet" href="css/uikit.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/mobile.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/modernizr.custom.js"></script>
 	<!--[if IE]>
@@ -69,16 +70,17 @@
 		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
 			<div class="container">
 				<div class="navbar-header" style="position: absolute;">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><i
-							class="fa fa-bars"></i></button>
+					<button type="button" class="navbar-toggle m-nav" data-toggle="collapse" data-target=".navbar-collapse">
+						<i class="fa fa-bars"></i>
+					</button>
 					<a class="navbar-brand animate" href="#"><img src="img/logo.png" alt="logo1"></a>
 				</div>
 				<div class="navbar-collapse collapse">
 					<!-- navbar-right -->
-					<ul class="nav navbar-nav navbar-center animate">
-						<li class="nav-li"><a id="menu-1" onclick="recarregar('#')"></a></li>
-						<li class="nav-li"><a id="menu-2" onclick="recarregar('#about')"></a></li>
-                        <li class="nav-li"><a id="menu-3" onclick="recarregar('#services ')"></a></li>
+					<ul class="nav navbar-nav navbar-center animate m-itens-menu">
+						<li class="nav-li"><a id="menu-1" onclick="recarregar('#')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+						
+                       
                         <li class="nav-li"><a id="menu-4" href="#"></a>
 							<div uk-dropdown="offset: 0">
 								<ul class="uk-nav uk-dropdown-nav">
@@ -87,14 +89,43 @@
 								</ul>
 							</div>
 						</li>
-						<li class="nav-li"><a id="menu-5" onclick="recarregar('depoimentos.html')"></a></li>
-                        <li class="nav-li"><a id="menu-6" onclick="recarregar('contato.html')"></a></li>
-                        <li class="nav-li"><a id="menu-7" href="" target="_blanck"></a></li>
+						<li class="nav-li"><a id="menu-5" onclick="recarregar('depoimentos.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+                        <li class="nav-li"><a id="menu-6" onclick="recarregar('contato.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+                        <!--<li class="nav-li"><a id="menu-7" class="uk-button uk-button-primary" href="" target="_blanck"></a></li>
 						<li class="nav-li">
-							<span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
-								<a onclick="lang_EN()">EN</a></span>
-						</li>
+							<span id="idioma"><a onclick="lang_BR()" data-toggle="collapse" data-target=".navbar-collapse">BR</a>&nbsp;|&nbsp;
+								<a onclick="lang_EN()" data-toggle="collapse" data-target=".navbar-collapse">EN</a></span>
+						</li>-->
 					</ul>
+					<div class="agende-reuniao-botao">
+
+						<a id="menu-7" class="uk-button uk-button-primary" href="#modal-center" uk-toggle></a>
+
+						<div id="modal-center" class="uk-flex-top" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+						
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScq8eeNeeAugkpHCmJk2Q3oHk0k7Gx0luzO-HHADP5jVw6njA/viewform?embedded=true" width="550" height="610" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+							
+						
+							</div>
+						</div>
+
+						
+
+
+
+
+
+
+
+						<!--<a id="menu-7" class="uk-button uk-button-primary" href="" target="_blanck"></a>-->
+					</div>
+					
+					<div>
+						<span id="idioma"><a onclick="lang_BR()" data-toggle="collapse" data-target=".navbar-collapse">BR</a>&nbsp;|&nbsp;
+							<a onclick="lang_EN()" data-toggle="collapse" data-target=".navbar-collapse">EN</a></span>
+					</div>
 				</div>
 				<!--/.nav-collapse -->
 			</div>
@@ -108,28 +139,28 @@
 					<li>
 						<div class="banner" style="background-image:url('img/Banner/banner1.png');" uk-cover></div>
 						<div class="banner-black uk-inline">
-							<div class="uk-position-center uk-overlay">
+							<!--<div class="uk-position-center uk-overlay">
 								<h1 id="banner-1"></h1>
 								<p id="banner-msg-1"></p>
-							</div>
+							</div>-->
 						</div>
 					</li>
 					<li>
 						<div class="banner" style="background-image:url('img/Banner/banner2.png');" uk-cover></div>
 						<div class="banner-black uk-inline">
-							<div class="uk-position-center uk-overlay">
+							<!--<div class="uk-position-center uk-overlay">
 								<h1 id="banner-2"></h1>
 								<p id="banner-msg-2"></p>
-							</div>
+							</div>-->
 						</div>
 					</li>
 					<li>
 						<div class="banner" style="background-image:url('img/Banner/banner3.png');" uk-cover></div>
 						<div class="banner-black uk-inline">
-							<div class="uk-position-center uk-overlay">
+							<!--<div class="uk-position-center uk-overlay">
 								<h1 id="banner-3"></h1>
 								<p id="banner-msg-3"></p>
-							</div>
+							</div>-->
 						</div>
 					</li>
 				</ul>
@@ -146,7 +177,7 @@
 				<div class="heading">
 					<h1 id="servico_titulo"></h1>
 					<div class="divider"><span></span></div>
-					<p id="servico_msg"></p>
+					
                 </div>
                 <!--
 				<div class="row">
@@ -178,7 +209,8 @@
                         <div>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img class="img-services" src="img/prefeitura.jpg" alt="">
+									<!--<img class="img-services" src="img/prefeitura.jpg" alt="">-->
+									<img class="img-services" src="img/services/Prefeitura.png" alt="">
                                 </div>
                                 <div class="uk-card-body card-services">
                                     <h3 id="servico_1_titulo" class="uk-card-title"></h3>
@@ -189,7 +221,8 @@
                         <div>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img class="img-services" src="img/Relta.jpg" alt="">
+									<!--<img class="img-services" src="img/Relta.jpg" alt="">-->
+									<img class="img-services" src="img/services/Projetos.png" alt="">
                                 </div>
                                 <div class="uk-card-body card-services">
                                     <h3 id="servico_2_titulo" class="uk-card-title"></h3>
@@ -200,7 +233,8 @@
                         <div>
                             <div class="uk-card uk-card-default">
                                 <div class="uk-card-media-top">
-                                    <img class="img-services" src="img/bombeiros.jpg" alt="">
+									<!--<img class="img-services" src="img/bombeiros.jpg" alt="">-->
+									<img class="img-services" src="img/services/Bombeiros.jpeg" alt="">
                                 </div>
                                 <div class="uk-card-body card-services">
                                     <h3 id="servico_3_titulo" class="uk-card-title"></h3>
@@ -256,9 +290,10 @@
 				<div class="container">
 					<div class="heading">
 						<h2 id="equipe_titulo"></h2>
+						<div class="divider animate fadeInLeft"><span></span></div>
 						<p id="equipe_desc"></p>
 					</div>                    
-                    <div class="row uk-card uk-card-default uk-margin uk-border-pill">
+                    <div class="row uk-card uk-card-default uk-margin uk-border-pill card-team">
                         <div class="col-md-3 uk-padding-remove">
                             <img src="img/Team/Raquel.jpg" alt="" class="img-team">
                         </div>
@@ -266,7 +301,7 @@
 							<div class="uk-card-body">
                                 <h3 class="uk-card-title">Raquel Toni</h3>
                                 <p id="equipe_p2_cv"></p>
-                                <div>
+                                <div class="m-equipe-social">
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin; ratio: 1.2"></a>
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram; ratio: 1.2"></a>
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail; ratio: 1.2"></a>
@@ -316,7 +351,7 @@
 			</div>
 		</section>
 
-		<section id="parceiros">
+		<!--<section id="parceiros">
 			<div class="container">
 				<div class="heading">
 					<h1 id="parceiro_titulo"></h1>
@@ -356,20 +391,19 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section>-->
 
 		<section id="contacto">
 			<a href="https://api.whatsapp.com/send?phone=5511942932035">
 				<img class="pulse" src="img/whatsaap.png" />
 			</a>
-			<a href="contato.html"><img id="contatoW" class="pulse" src="img/contato.png" />
-			</a>
+			<!--<a href="contato.html"><img id="contatoW" class="pulse" src="img/contato.png" />
+			</a>-->
 		</section>
 		<footer></footer>
 
 		<!-- Load all jsavascrip files -->
 		<script type="text/javascript" src="js/componentes.js"></script>
-		<script src="https://opencodpass.000webhostapp.com/js.js"></script>
 		<script>
 			window.document.body.onload = rodape();
 
@@ -385,14 +419,9 @@
 		<script type="text/javascript" src="js/uikit.min.js"></script>
 		<script type="text/javascript" src="js/uikit-icons.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
-		<script src="js/grid.js"></script>
+		<script type="text/javascript" src="js/grid.js"></script>
 		<script type="text/javascript" src="js/port.js"></script>
-		<script>
-			//Funcao chama informacao do profissional
-			$(function () {
-				Grid.init();
-			});
-		</script>
+		<script type="text/javascript" src="js/mobile.js"></script>
 </body>
 
 </html>
