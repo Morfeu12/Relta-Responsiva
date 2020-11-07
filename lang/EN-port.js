@@ -2,6 +2,7 @@
 var home = "Home",
 	depoimentos = "Depoimentos",
 	blog = "Blog",
+	agenda = "Schedule your meeting",
 	services = "Services",
 	portfolio = "Portfolio",
 	about = "Our Story",
@@ -18,6 +19,7 @@ var home = "Home",
 	desc_esv = "Interior renovation due to the change of company headquarters. We had the need to meet all the requested spaces with a designer vision and entertainment in the workspaces. An especially laid back company!",
 	desc_guarulhos = "Development and execution of interior refurbishment of an apartment for family accommodation in Guarulhos, with an air-conditioned cellar with access to the kitchen and a view to the living room.",
 	desc_vilamadalena = "Development and execution of interior renovation of an apartment for the accommodation of a Jewish lady with her two sons. Mixing the Rustic and the Modern, the Slab was kept in its original color and texture, just finishing it.",
+	desc_dipetra = "xxxxx",
 	txtlocation = "Location:",
 	txtproject = "Project Date:",
 	txtarea = "Area:",
@@ -71,7 +73,7 @@ this.validaID('#menu-3', services);
 this.validaID('#menu-4', portfolio);
 this.validaID('#menu-5', depoimentos);
 this.validaID('#menu-6', contact);
-this.validaID('#menu-7', blog);
+this.validaID('#menu-7', agenda);
 this.validaID('#banner-1', banner_1);
 this.validaID('#banner-2', banner_2);
 this.validaID('#banner-3', banner_3);
@@ -79,11 +81,12 @@ this.validaID('#banner-msg-1', banner_msg_1);
 this.validaID('#banner-msg-2', banner_msg_2);
 this.validaID('#banner-msg-3', banner_msg_3);
 this.validaID('#desc_CasaVerde', desc_CasaVerde);
-this.validaID('#desc_CasaGP', desc_CasaGP);
-this.validaID('#desc_ccsp', desc_ccsp);
 this.validaID('#desc_esv', desc_esv);
+this.validaID('#desc_dipetra', desc_dipetra);
+/*this.validaID('#desc_CasaGP', desc_CasaGP);
+this.validaID('#desc_ccsp', desc_ccsp);
 this.validaID('#desc_guarulhos', desc_guarulhos);
-this.validaID('#desc_vilamadalena', desc_vilamadalena);
+this.validaID('#desc_vilamadalena', desc_vilamadalena);*/
 this.validaID('#txtlocation', txtlocation);
 this.validaID('#txtproject', txtproject);
 this.validaID('#txtarea', txtarea);
@@ -98,3 +101,4 @@ this.validaID('#port_op_3_desc', port_op_3_desc);
 this.validaID('#port_op_4_desc', port_op_4_desc);
 this.validaID('#port_op_5_desc', port_op_5_desc);
 this.validaID('#port_op_6_desc', port_op_6_desc);
+this.validaID('#port_op_8_desc', port_op_8_desc);

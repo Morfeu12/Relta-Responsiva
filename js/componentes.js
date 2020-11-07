@@ -1,4 +1,4 @@
-function menuNavegacao(id) {
+function menuNavegacao() {
     var menuNav = `
     <!-- Fixed navbar -->
     <div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
@@ -11,31 +11,51 @@ function menuNavegacao(id) {
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-center animate">
                     <li class="nav-li"><a id="menu-1" onclick="recarregar('../index.php')"></a></li>
-                    <li class="nav-li"><a id="menu-2" onclick="recarregar('../index.php#about')"></a></li>
-                    <li class="nav-li"><a id="menu-3" onclick="recarregar('../index.php#services')"></a></li>
                     <li class="nav-li"><a id="menu-4" href="#"></a><div uk-dropdown="offset: 0">
                             <ul class="uk-nav uk-dropdown-nav">
-                                <li><a href="casa-verde.html">Casa Verde</a></li>
-                                <li><a href="esv.html">ESV</a></li> 
+                                <li><a onclick="recarregar('../portfolio/casa-verde.html')">Casa Verde</a></li>
+                                <li><a onclick="recarregar('../portfolio/esv.html')">ESV</a></li>
+                                <li><a onclick="recarregar('../portfolio/di-petra.html')">Di Petra</a></li> 
                             </ul>
                         </div></li>
-                    <li class="nav-li"><a id="menu-5" onclick="recarregar('../depoimentos.html')"></a></li>
+                    <li class="nav-li"><a id="menu-5" onclick="recarregar('../pages/depoimentos.html')"></a></li>
                     <li class="nav-li"><a id="menu-6" onclick="recarregar('../contato.html')"></a></li>
-                    <li class="nav-li"><a id="menu-7" href="" target="_blanck"></a></li>
-                    <li class="nav-li">
-                        <span id="idioma"><a onclick="lang_BR()">BR</a>&nbsp;|&nbsp;
-                            <a onclick="lang_EN()">EN</a></span>
-                    </li>
+                    <div class="agende-reuniao-botao">
+
+						<a id="menu-7" class="uk-button uk-button-primary" href="#modal-center" uk-toggle></a>
+
+						<div id="modal-center" class="uk-flex-top" uk-modal>
+							<div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+						
+								<button class="uk-modal-close-default" type="button" uk-close></button>
+								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScq8eeNeeAugkpHCmJk2Q3oHk0k7Gx0luzO-HHADP5jVw6njA/viewform?embedded=true" width="550" height="610" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<span id="idioma"><a onclick="lang_BR()" data-toggle="collapse" data-target=".navbar-collapse">BR</a>&nbsp;|&nbsp;
+							<a onclick="lang_EN()" data-toggle="collapse" data-target=".navbar-collapse">EN</a></span>
+					</div>
                 </ul>
             </div>
             <!--/.nav-collapse -->
         </div>
     </div>
+    `,
+        element = !!document.querySelector('#menunav'),
+        el = document.querySelector('#menunav')
+    if (element) {
+        el.innerHTML = menuNav
+    } else {
+        console.log("O ID #menunav nao existe!")
+    }
+}
 
+function banner() {
+    var banner = `
     <div uk-slideshow="animation: fade;autoplay:true; autoplay-interval:7000;pause-on-hover:false">
-
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
-
             <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 32.2">
                 <li>
                     <img src="../img/Banner/banner1.png" alt="" uk-cover>
@@ -59,27 +79,24 @@ function menuNavegacao(id) {
                     </div>
                 </li>
             </ul>
-
             <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous
                 uk-slideshow-item="previous"></a>
             <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
                 uk-slideshow-item="next"></a>
-
         </div>
-
         <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
-
-    </div>`,
-        element = !!document.querySelector(id),
-        el = document.querySelector(id)
+    </div>
+            `,
+        element = !!document.querySelector('#banner'),
+        el = document.querySelector('#banner')
     if (element) {
-        el.innerHTML = menuNav
+        el.innerHTML = banner
     } else {
-        console.log("O ID " + id + " nao existe!")
+        console.log("O ID #banner nao existe!")
     }
 }
 
-function addPortfolio(id) {
+function portfolio() {
     var port = `
     <!-- Inicio partifolio -->
     <section id="more-port" style="margin-bottom: 30px;">
@@ -105,7 +122,7 @@ function addPortfolio(id) {
                                     </div>
                                     <div class="uk-card-body">
                                         <a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small"
-                                            href="casa-verde.html">Casa Verde</a>
+                                            href="../portfolio/casa-verde.html">Casa Verde</a>
                                         <p id="port_op_2_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
@@ -127,8 +144,30 @@ function addPortfolio(id) {
                                     </div>
                                     <div class="uk-card-body">
                                         <a id="port_op_6" class="uk-link-heading uk-button-text oc-heading-small"
-                                            href="esv.html">ESV</a>
+                                            href="../portfolio/esv.html">ESV</a>
                                         <p id="port_op_6_desc" class="txt-portilofolio-desc"></p>
+                                        <div class="uk-visible@l uk-margin-small-bottom">
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="youtube"></a>
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="facebook"></a>
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="instagram"></a>
+                                            <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-transition-toggle" tabindex="0">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <a href="../portfolio/di-petra.html"><img src="../img/portfolio/Di Petra/Capa.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <a id="port_op_8" class="uk-link-heading uk-button-text oc-heading-small"
+                                            href="../portfolio/di-petra.html">Di Petra</a>
+                                        <p id="port_op_8_desc" class="txt-portilofolio-desc"></p>
                                         <div class="uk-visible@l uk-margin-small-bottom">
                                             <a href="" class="uk-icon-button uk-margin-small-right"
                                                 uk-icon="youtube"></a>
@@ -163,12 +202,12 @@ function addPortfolio(id) {
     </section>
     <!-- FIM Portifolio-->
     `
-    element = !!document.querySelector(id),
-        el = document.querySelector(id)
+    element = !!document.querySelector('#portfolio'),
+        el = document.querySelector('#portfolio')
     if (element) {
         el.innerHTML = port
     } else {
-        console.log("O ID " + id + " nao existe!")
+        console.log("O ID #portfolio nao existe!")
     }
 }
 
@@ -196,6 +235,7 @@ function contato() {
         console.log("O ID #contato nao existe!")
     }
 }
+
 function rodape() {
     var rodape = `
     <p id="copyright">©Copyright <a href='http://www.relta.com.br/'>Relta.com</a> 2020 All rights reserved<br />
@@ -226,3 +266,21 @@ function rodape() {
         console.log("A tag <footer> nao existe!")
     }
 }
+
+/* Controlador de paginas */
+
+function validaComponente (id){
+	var element = !!document.querySelector(id)
+	if(element){
+		return true
+	} else {
+		console.log("O ID "+id+" nao existe!")
+	}
+}
+
+/* Chamada de componentes */
+if(validaComponente('#menunav') === true){menuNavegacao()};
+if(validaComponente('#banner') === true){banner()};
+if(validaComponente('#portfolio') === true){portfolio()};
+if(validaComponente('#contato') === true){contato()};
+if(validaComponente('footer') === true){rodape()};

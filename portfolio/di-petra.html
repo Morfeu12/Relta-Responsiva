@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<!--
+ * A Design by OmarCosta
+ * Author: OmarCosta
+ * Author URL: http://omarcosta.site
+ * License: http://omarcosta.site
+-->
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELTA ARQUITETURA</title>
+    <link href='../fonts/oswald.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/uikit.css">
+    <link rel="stylesheet" href="../css/font-awesome.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../css/port.css">
+
+
+
+    <script src="../js/modernizr.custom.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <!-- Carregar idioma script automaticamente pelo idioma do navegador -->
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var userLang = navigator.language || navigator.userLanguage;
+        switch (userLang) {
+            case 'en':
+                lang_EN();
+                break
+            case 'pt-BR':
+                lang_BR();
+                break
+            default:
+                lang_BR();
+        }
+        //Carregar idioma manualmente
+        function lang_BR() {
+            var element = document.createElement("script");
+            element.src = "../lang/BR-port.js";
+            document.body.appendChild(element);
+        }
+        function lang_EN() {
+            var element = document.createElement("script");
+            element.src = "../lang/EN-port.js";
+            document.body.appendChild(element);
+        }
+    </script>
+    <div class="loader">
+        <div class="project-loader">
+            <div class="bubblingG">
+                <img src="../img/logo.png" width="400px" />
+                <span id="bubblingG_1"></span>
+                <span id="bubblingG_2"></span>
+                <span id="bubblingG_3"></span>
+            </div>
+        </div>
+    </div>
+    <div class="loading" id="wrapper">
+        <div id="menunav"></div>
+        <div id="banner"></div>
+
+        <section id="" class="gray">
+            <div class="uk-container uk-container-large">
+                <div class="heading">
+                    <h1>Di Petra</h1>
+                    <div class="divider"><span></span></div>
+                    <p id="desc_dipetra"></p>
+                </div>
+                <div uk-grid>
+                    <div class="uk-width-1-4@m">
+                        <div id="informativo" class="" uk-sticky="bottom: #end;offset: 60">
+                            <div class="uk-text-center uk-padding">
+                                <a id="port_op_2" class="uk-link-heading uk-button-text oc-heading-small"
+                                    href="">Di Petra</a>
+                            </div>
+                            <div class="uk-padding-small">
+                                <label id="txtlocation"></label><br />
+                                <span>xxx</span>
+                            </div>
+                            <div class="uk-padding-small">
+                                <label id="txtproject"></label><br />
+                                <span>xxx</span>
+                            </div>
+                            <div class="uk-padding-small">
+                                <label id="txtarea"></label><br />
+                                <span>xx m²</span>
+                            </div>
+                            <div class="uk-padding-small">
+                                <label id="txtarquiterura"></label><br />
+                                <span>Relta Arquitetura</span>
+                            </div>
+                            <div class="uk-padding-small">
+                                <label id="txtinteriores"></label><br />
+                                <span>Relta Arquitetura</span>
+                            </div>
+                            <div class="uk-padding-small">
+                                <label id="txtteam"></label><br />
+                                <span>Raquel Toni</span><br />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="end" class="uk-hidden@m"></div>
+
+                    <div id="galeria" class="uk-width-expand@m">
+                        <div class="uk-grid-small uk-text-center" uk-grid>
+                            <div class="uk-width-1-2@m">
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    <div class="img-cover" style="background-image: url('../img/portfolio/Di Petra/1.png');">
+                                        <a id="imgC" class="img-click" onclick="revealVideo('img3','port3')"
+                                            onmouseenter="addClass('#imgC', 'mouseEvento')"
+                                            onmouseout="remClass('#imgC', 'mouseEvento')"></a>
+                                        <div id="img3" class="lightbox" onclick="hideVideo('img3','port3')">
+                                            <div class="lightbox-container">
+                                                <div class="lightbox-content">
+                                                    <a onclick="hideVideo('img3','port3')" class="close"></a>
+                                                    <div class="img-container">
+                                                        <img id="port3" src="../img/portfolio/Di Petra/1.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="uk-width-1-2@m">
+                                <div class="uk-card uk-card-default uk-card-body">
+                                    <div class="img-cover" style="background-image: url('../img/portfolio/Di Petra/2.png');">
+                                        <a id="imgB" class="img-click" onclick="revealVideo('img2','port2')"
+                                            onmouseenter="addClass('#imgB', 'mouseEvento')"
+                                            onmouseout="remClass('#imgB', 'mouseEvento')"></a>
+                                        <div id="img2" class="lightbox" onclick="hideVideo('img2','port2')">
+                                            <div class="lightbox-container">
+                                                <div class="lightbox-content">
+                                                    <a onclick="hideVideo('img2','port2')" class="close"></a>
+                                                    <div class="img-container">
+                                                        <img id="port2" src="../img/portfolio/Di Petra/2.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="end"></div>
+            <div id="contato"></div>
+            <div id="portfolio"></div>
+            <footer></footer>
+    </div>
+
+    <!-- Load all jsavascrip files -->
+    <script type="text/javascript" src="../js/componentes.js"></script>
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../js/jquery.label_better.js"></script>
+    <script type="text/javascript" src="../js/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="../js/jquery.easypiechart.js"></script>
+    <script type="text/javascript" src="../js/jquery.inview.js"></script>
+    <script type="text/javascript" src="../js/countUp.js"></script>
+    <script type="text/javascript" src="../js/uikit.min.js"></script>
+    <script type="text/javascript" src="../js/uikit-icons.min.js"></script>
+    <script type="text/javascript" src="../js/main.js"></script>
+    <script src="../js/grid.js"></script>
+    <script type="text/javascript" src="../js/port.js"></script>
+
+</body>
+
+</html>

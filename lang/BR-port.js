@@ -2,6 +2,7 @@
 var home = "Início",
 	depoimentos = "Depoimentos",
 	blog = "Blog", 
+	agenda = "Agende sua reunião",
 	services = "Serviços",
 	portfolio = "Portfólio",
 	about = "Nossa História",
@@ -18,6 +19,7 @@ var home = "Início",
 	desc_esv = "Realização de reforma em interiores devido a mudança da sede da empresa. Tivemos a necessidade de atender todos os espaços solicitados com uma visão de designer e entretenimento nos espaços de trabalho. Uma empresa especialmente descontraída!",
 	desc_guarulhos = "Desenvolvimento e execução de reforma de interiores de um apartamento para acomodação de uma família em Guarulhos, com uma adega climatizada de acesso pela cozinha e com visão para a sala.",
 	desc_vilamadalena = "Desenvolvimento e execução de reforma de interiores de um apartamento para acomodação de uma senhora Judia, com seus dois Filhos. Mesclando o Rústico e o Moderno, foi mantido a Laje em sua cor e textura originais, apenas dando acabamento a mesma.",
+	desc_dipetra = "xxxxx",
 	txtlocation = "Local:",
 	txtproject = "Data do Projeto:",
 	txtarea = "Área:",
@@ -27,11 +29,12 @@ var home = "Início",
 	port_titulo = "PORTIFÓLIO",
 	port_desc = "Conheça todos os nossos projetos.",
 	port_op_1_desc = desc_CasaGP.substr(0,100) + " ..." + " <a href='casa-gp.html' class='saiba-mais-port'>Saiba mais</a>",
-	port_op_2_desc = desc_CasaVerde.substr(0,100) + "..." + " <a href='casa-verde.html' class='saiba-mais-port'>Saiba mais</a>",
+	port_op_2_desc = desc_CasaVerde.substr(0,100) + "..." + " <a href='../portfolio/casa-verde.html' class='saiba-mais-port'>Saiba mais</a>",
 	port_op_3_desc = desc_ccsp.substr(0,99) + "..." + "<a href='ccsp.html' class='saiba-mais-port'>Saiba mais</a>",
 	port_op_4_desc = desc_guarulhos.substr(0,100) + "..." + " <a href='guarulhos.html' class='saiba-mais-port'>Saiba mais</a>",
 	port_op_5_desc = desc_vilamadalena.substr(0,100) + "..." + " <a href='vila-madalena.html' class='saiba-mais-port'>Saiba mais</a>",
-	port_op_6_desc = desc_esv.substr(0,100) + "..." + "<a href='esv.html' class='saiba-mais-port'>Saiba mais</a>";
+	port_op_6_desc = desc_esv.substr(0,100) + "..." + "<a href='../portfolio/esv.html' class='saiba-mais-port'>Saiba mais</a>";
+	port_op_8_desc = desc_dipetra.substr(0,100) + "..." + "<a href='../portfolio/di-petra.html' class='saiba-mais-port'>Saiba mais</a>";
 	
 //Funcao verifica e altera o valor do elemnto HTML
 function validaID (id, valor){
@@ -71,7 +74,7 @@ this.validaID('#menu-3', services);
 this.validaID('#menu-4', portfolio);
 this.validaID('#menu-5', depoimentos);
 this.validaID('#menu-6', contact);
-this.validaID('#menu-7', blog);
+this.validaID('#menu-7', agenda);
 this.validaID('#banner-1', banner_1);
 this.validaID('#banner-2', banner_2);
 this.validaID('#banner-3', banner_3);
@@ -79,11 +82,12 @@ this.validaID('#banner-msg-1', banner_msg_1);
 this.validaID('#banner-msg-2', banner_msg_2);
 this.validaID('#banner-msg-3', banner_msg_3);
 this.validaID('#desc_CasaVerde', desc_CasaVerde);
-this.validaID('#desc_CasaGP', desc_CasaGP);
-this.validaID('#desc_ccsp', desc_ccsp);
 this.validaID('#desc_esv', desc_esv);
+this.validaID('#desc_dipetra', desc_dipetra);
+/*this.validaID('#desc_CasaGP', desc_CasaGP);
+this.validaID('#desc_ccsp', desc_ccsp);
 this.validaID('#desc_guarulhos', desc_guarulhos);
-this.validaID('#desc_vilamadalena', desc_vilamadalena);
+this.validaID('#desc_vilamadalena', desc_vilamadalena);*/
 this.validaID('#txtlocation', txtlocation);
 this.validaID('#txtproject', txtproject);
 this.validaID('#txtarea', txtarea);
@@ -98,3 +102,4 @@ this.validaID('#port_op_3_desc', port_op_3_desc);
 this.validaID('#port_op_4_desc', port_op_4_desc);
 this.validaID('#port_op_5_desc', port_op_5_desc);
 this.validaID('#port_op_6_desc', port_op_6_desc);
+this.validaID('#port_op_8_desc', port_op_8_desc);

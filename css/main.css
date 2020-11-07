@@ -1740,3 +1740,12 @@ body {
   .portfolio{
 	  margin-bottom: 5%;
   }
+  .depoimentos-img {
+	  width: 10rem;
+  }
+  #Depoimentos > article:nth-child(odd) > div{
+	flex-flow: row-reverse;
+    text-align: right;
+  }
+  
+  

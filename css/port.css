@@ -139,7 +139,7 @@ body {
 #projetos > li{
 	margin-left: .5%;
 	margin-right: .5%;
-	width: 19%;
+	width: 21%;
 }
 #about>div.container>div.row>div>div{
 	display: inline-grid;
@@ -186,3 +186,15 @@ body {
 	white-space: nowrap;
 }
 
+@media only screen and (max-width: 600px) {
+	.navbar-center{
+		display: block!important;
+    	margin-left: 0%!important;
+		float: unset;
+		text-align: unset;
+	}
+	.navbar-toggle {
+		color: white;
+    	z-index: 1;
+	}
+}

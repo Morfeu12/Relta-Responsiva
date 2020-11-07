@@ -12,18 +12,20 @@
         margin-left: 0px;
         margin-top: 0px;
         top: 38%;
-
     }
 
     /*Ajustes menu navegacao*/
-    #idioma{
-        width: 100px;
-        margin-top: 40%; 
+    #idioma{ 
+        top: 1.2rem;
+        right: 0;
+        left: 0;
+        text-align: center; 
     }
     .m-nav{
         color:#fff;
         position: fixed;
         right: 0px;
+        z-index: 9999;
     }
     .nav-li > a {
         line-height: 2.6!important; 
@@ -37,7 +39,7 @@
     }
     .navbar-nav > li > div.uk-dropdown {    
         position: unset;
-        margin-left: 40%;
+        margin-left: 5%;
         min-width: 200px;
         padding: 0px;
         background: #fff0;
@@ -48,6 +50,15 @@
     }
     .navbar-collapse{
         max-height: inherit;
+    }
+    .navbar-smak .nav {
+        padding-top: 4rem;
+    }
+    .navbar-small {
+        height: unset;
+    }
+    .navbar-small .nav {
+        padding-top: 4rem!important;
     }
 
     /* Ajuste service */
@@ -63,11 +74,11 @@
         text-align: center;
     }
     .img-team {
-        border-radius: 50%;
         display: block;
         margin: auto;
-        height: 250px;
-        width: 62.5%;
+        position: unset;
+        transform: none;
+        margin-top: 2rem;
     }
     .uk-card-title {
         text-align: center;
@@ -82,5 +93,14 @@
     }
     img#contatoW {
         bottom: 90px;
+    }
+    .agende-reuniao-botao > a {
+        /*left: 1.7rem;
+        right: unset;
+        top: 3.5rem;*/
+        left: 0; */
+        right: 0;
+        top: 4rem;
+        width: 100%;
     }
   }
