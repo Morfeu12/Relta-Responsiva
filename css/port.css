@@ -197,4 +197,7 @@ body {
 		color: white;
     	z-index: 1;
 	}
+	#projetos > li{
+		width: 100%;
+	}
 }

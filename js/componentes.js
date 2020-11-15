@@ -113,7 +113,7 @@ function portfolio() {
                     <!-- lista Clientes -->
                     <div class="uk-slider-container">
                         <!-- uk-child-width-1-1@s ajuste resolucao maior que 640x; uk-child-width-1-6@l ajuste resolucao maior que 1200 -->
-                        <ul id="projetos" class="uk-slider-items uk-child-width-1-2 uk-child-width-1-1@s uk-child-width-1-6@l"> 
+                        <ul id="projetos" class="uk-slider-items uk-child-width-1-1@s uk-child-width-1-6@l"> 
                             <li class="uk-transition-toggle" tabindex="0">
                                 <div class="uk-card uk-card-default">
                                     <div class="uk-card-media-top">
