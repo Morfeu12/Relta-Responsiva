@@ -186,7 +186,12 @@ body {
 	white-space: nowrap;
 }
 
-@media only screen and (max-width: 600px) {
+.navbar-center{
+	margin-left: 52%!important;
+}
+
+
+@media only screen and (max-width: 650px) {
 	.navbar-center{
 		display: block!important;
     	margin-left: 0%!important;
@@ -199,5 +204,11 @@ body {
 	}
 	#projetos > li{
 		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1367px) {
+	.navbar-center{
+		margin-left: 70%!important;
 	}
 }

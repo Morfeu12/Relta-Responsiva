@@ -2,7 +2,7 @@
 var home = "Home",
 	depoimentos = "Depoimentos",
 	services = "Services",
-	portfolio = "Architectural Projects",
+	portfolio = "Projects",
 	about = "About",
 	contact = "Budget", 
 	agenda = "Schedule your meeting",

@@ -157,8 +157,8 @@ $hora_envio = date('H:i:s');
   ";
 //enviar
    
-  // emails para quem será enviado o formulário contato@relta.com.br
-  $emailenviar = "contato@relta.com.br";
+  // emails para quem será enviado o formulário raquel@relta.com.br
+  $emailenviar = "omarcosta152@gmail.com";
   $destino = $emailenviar;
   $assunto = "Contato pelo Site";
   $nomeContato = $nome;

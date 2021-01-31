@@ -16,10 +16,12 @@ function menuNavegacao() {
                                 <li><a onclick="recarregar('../portfolio/casa-verde.html')">Casa Verde</a></li>
                                 <li><a onclick="recarregar('../portfolio/esv.html')">ESV</a></li>
                                 <li><a onclick="recarregar('../portfolio/di-petra.html')">Di Petra</a></li> 
+                                <li><a onclick="recarregar('../portfolio/casa-do-norte-emporio-maria-amelia.html')">Casa do Norte e Empório Maria Amélia</a></li> 
+                                <li><a onclick="recarregar('../portfolio/stella-bella-vita.html')">Stella Vita Bella Vita</a></li> 
                             </ul>
                         </div></li>
-                    <li class="nav-li"><a id="menu-5" onclick="recarregar('../pages/depoimentos.html')"></a></li>
-                    <li class="nav-li"><a id="menu-6" onclick="recarregar('../contato.html')"></a></li>
+                    <!--<li class="nav-li"><a id="menu-5" onclick="recarregar('../pages/depoimentos.html')"></a></li>
+                    <li class="nav-li"><a id="menu-6" onclick="recarregar('../contato.html')"></a></li>-->
                     <div class="agende-reuniao-botao">
 
 						<a id="menu-7" class="uk-button uk-button-primary" href="#modal-center" uk-toggle></a>
@@ -180,6 +182,57 @@ function portfolio() {
                                     </div>
                                 </div>
                             </li>
+
+
+                            <li class="uk-transition-toggle" tabindex="0">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <a href="casa-do-norte-emporio-maria-amelia.html"><img src="../img/portfolio/Emporio Maria Amelia/Capa.png"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <a id="port_op_1" class="uk-link-heading uk-button-text oc-heading-small"
+                                            href="../portfolio/casa-do-norte-emporio-maria-amelia.html">Casa do Norte e Empório Maria Amélia</a>
+                                        <!--<p id="port_op_1_desc" class="txt-portilofolio-desc"></p>-->
+                                        <div class="uk-visible@l uk-margin-small-bottom">
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="youtube"></a>
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="facebook"></a>
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="instagram"></a>
+                                            <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="uk-transition-toggle" tabindex="0">
+                                <div class="uk-card uk-card-default">
+                                    <div class="uk-card-media-top">
+                                        <a href="stella-bella-vita.html"><img src="../img/portfolio/Stella Bella Vita/Capa.jpeg"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <a id="port_op_3" class="uk-link-heading uk-button-text oc-heading-small"
+                                            href="../portfolio/stella-bella-vita.html">Stella Vita Bella Vita</a>
+                                        <!--<p id="port_op_3_desc" class="txt-portilofolio-desc"></p>-->
+                                        <div class="uk-visible@l uk-margin-small-bottom">
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="youtube"></a>
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="facebook"></a>
+                                            <a href="" class="uk-icon-button uk-margin-small-right"
+                                                uk-icon="instagram"></a>
+                                            <a href="" class="uk-icon-button " uk-icon="twitter"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+
+
+
+
+
                         </ul>
                     </div>
                     <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
@@ -213,19 +266,9 @@ function portfolio() {
 
 function contato() {
     var contato = `
-    <a class="uk-button uk-button-default uk-margin-small-right" type="button"
-	uk-toggle="target: #modal-close-default"><img class="pulse" src="../img/contato.png" /></a>
-
-	<!-- This is the modal with the default close button -->
-	<div id="modal-close-default" uk-modal>
-		<div class="uk-modal-dialog uk-modal-body" style="width: 80%; height: 100%;padding:0px;">
-			<button class="uk-modal-close-default" type="button" uk-close></button>
-			<div id="obj-contato" style="width: 100%;height:100%;">
-				<iframe id="contato-iframe" src="../ContactFrom_v17/index.php" scrolling="yes"
-				style="width: 100%; height: 100%;"></iframe>
-			</div>
-		</div>
-	</div>
+    <a style="z-index:9999;" href="https://api.whatsapp.com/send?phone=5511942932035" target="_blank">
+		<img class="pulse" src="../img/whatsaap.png" />
+	</a>
             `,
         element = !!document.querySelector('#contato'),
         el = document.querySelector('#contato')

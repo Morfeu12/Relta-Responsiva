@@ -86,10 +86,13 @@
 								<ul class="uk-nav uk-dropdown-nav">
 									<li><a onclick="recarregar('portfolio/casa-verde.html')">Casa Verde</a></li>
 									<li><a onclick="recarregar('portfolio/esv.html')">ESV</a></li>
+									<li><a onclick="recarregar('portfolio/di-petra.html')">Di Petra</a></li>
+									<li><a onclick="recarregar('portfolio/casa-do-norte-emporio-maria-amelia.html')">Casa do Norte e Empório Maria Amélia</a></li>
+									<li><a onclick="recarregar('portfolio/stella-bella-vita.html')">Stella Vita Bella Vita</a></li>
 								</ul>
 							</div>
 						</li>
-						<li class="nav-li"><a id="menu-5" onclick="recarregar('depoimentos.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
+						<!--<li class="nav-li"><a id="menu-5" onclick="recarregar('depoimentos.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>-->
                         <li class="nav-li"><a id="menu-6" onclick="recarregar('contato.html')" data-toggle="collapse" data-target=".navbar-collapse"></a></li>
                         <!--<li class="nav-li"><a id="menu-7" class="uk-button uk-button-primary" href="" target="_blanck"></a></li>
 						<li class="nav-li">
@@ -291,7 +294,7 @@
 					<div class="heading">
 						<h2 id="equipe_titulo"></h2>
 						<div class="divider animate fadeInLeft"><span></span></div>
-						<p id="equipe_desc"></p>
+						<!--<p id="equipe_desc"></p>-->
 					</div>                    
                     <div class="row uk-card uk-card-default uk-margin uk-border-pill card-team">
                         <div class="col-md-3 uk-padding-remove">
@@ -299,9 +302,9 @@
                         </div>
                         <div class="col-md-8">
 							<div class="uk-card-body">
-                                <h3 class="uk-card-title">Raquel Toni</h3>
-                                <p id="equipe_p2_cv"></p>
-                                <div class="m-equipe-social">
+                                <h3 class="uk-card-title quemsomos-txt">Raquel Toni</h3>
+                                <p id="equipe_p2_cv" class="quemsomos-txt"></p>
+                                <div class="m-equipe-social quemsomos-txt">
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: linkedin; ratio: 1.2"></a>
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: instagram; ratio: 1.2"></a>
                                     <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="icon: mail; ratio: 1.2"></a>
@@ -315,7 +318,7 @@
 		</section>
 
 		<!-- Inicio partifolio -->
-		<section class="portfolio" id="portfolio">
+		<section class="portfolio" id="Projetos">
 			<div class="container" style="width: 97%;">
 				<div class="heading">
 					<h1 id="port_titulo"></h1>
@@ -323,7 +326,7 @@
 					<p id="port_desc"></p>
 				</div>
 				<div class="uk-grid-small uk-text-center" uk-grid>				
-					<div class="uk-width-1-2@m">
+					<div class="uk-width-1-3@m">
 						<div class="uk-card uk-card-default card-port">
 							<div class="img-cover" style="background-image: url('img/portfolio/ESV/Capa.png');"
 								onmouseenter="remAtributo('#port-4', 'style')">
@@ -335,7 +338,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-1-2@m">
+					<div class="uk-width-1-3@m">
 						<div class="uk-card uk-card-default card-port">
 							<div class="img-cover" style="background-image: url('img/portfolio/Casa Verde/Capa.JPG');"
 								onmouseenter="remAtributo('#port-2', 'style')">
@@ -343,6 +346,18 @@
 									<a href="portfolio/casa-verde.html" class="img-click mouseEvento-h"
 										onmouseout="addAtributo('#port-2', 'display:none;')">
 										Casa Verde</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-3@m">
+						<div class="uk-card uk-card-default card-port">
+							<div class="img-cover" style="background-image: url('img/portfolio/Di Petra/Capa.png');"
+								onmouseenter="remAtributo('#port-3', 'style')">
+								<div id="port-3" style="display:none">
+									<a href="portfolio/di-petra.html" class="img-click mouseEvento-h"
+										onmouseout="addAtributo('#port-3', 'display:none;')">
+										Di Petra</a>
 								</div>
 							</div>
 						</div>
