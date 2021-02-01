@@ -11,9 +11,11 @@ $local = $_POST['local'];
 $assunto = $_POST['assunto'];
 $ambiente = $_POST['ambiente'];
 $area = $_POST['area'];
-$msg = $_POST['message'];
 $data_envio = date('d/m/Y');
 $hora_envio = date('H:i:s');
+$projectType = $_POST['projectType'];
+$property = $_POST['property'];
+
 
 // Compo E-mail
   $arquivo = "
@@ -94,21 +96,21 @@ $hora_envio = date('H:i:s');
                 <td>$local</td>
               </tr>
               <tr>
-                <td><b>Assunto:</b></td>
-                <td>$assunto</td>
+                <td><b>Tipo de projeto:</b></td>
+                <td>$projectType</td>
               </tr>
               <tr>
-                <td><b>Ambiente:</b></td>
-                <td>$ambiente</td>
+                <td><b>Seu imóvel é:</b></td>
+                <td>$property</td>
               </tr>
               <tr>
                 <td><b>Área:</b></td>
                 <td>$area</td>
               </tr>
               <tr>
-              <td><b>Mensagem:</b></td>
-              <td>$msg</td>
-            </tr>
+                <td><b>Assunto:</b></td>
+                <td>$assunto</td>
+              </tr>
             </tbody>
           </table>
           <p>Este e-mail foi Enviado em: <b>$data_envio</b> às <b>$hora_envio .</b></p>

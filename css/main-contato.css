@@ -553,4 +553,15 @@
   .whats:hover{
     color: #00832e;
   }
-  
+  .input100-1{
+    height: initial;
+    display: list-item;
+    list-style: none;
+    width: initial;
+    background: transparent;
+    font-family: Poppins-Regular;
+    font-size: 18px;
+    color: #a7a7a7;
+    line-height: 1.2;
+    margin-left: 2%;
+  }
